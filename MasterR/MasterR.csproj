@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D27F93F-3C4E-4099-9B51-3F0DC5C62752}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasterR</RootNamespace>
+    <AssemblyName>MasterR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConnectionToDB">
+      <HintPath>..\..\ConnectionToDB\ConnectionToDB\bin\Debug\ConnectionToDB.dll</HintPath>
+    </Reference>
+    <Reference Include="DodatakZaObradu">
+      <HintPath>..\..\DodatakZaObradu\DodatakZaObradu\bin\Debug\DodatakZaObradu.dll</HintPath>
+    </Reference>
+    <Reference Include="DrzacAlataNS">
+      <HintPath>..\..\DrzacAlataNS\DrzacAlataNS\bin\Debug\DrzacAlataNS.dll</HintPath>
+    </Reference>
+    <Reference Include="ExperimentalE">
+      <HintPath>..\..\ExperimentalE\ExperimentalE\bin\Debug\ExperimentalE.dll</HintPath>
+    </Reference>
+    <Reference Include="FilterReznihPlocica">
+      <HintPath>..\..\FilterReznihPlocica\FilterReznihPlocica\bin\Debug\FilterReznihPlocica.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphDraw, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GraphDraw\GraphDraw\bin\Debug\GraphDraw.dll</HintPath>
+    </Reference>
+    <Reference Include="InterpBrzina">
+      <HintPath>..\..\InterpBrzina\InterpBrzina\bin\Debug\InterpBrzina.dll</HintPath>
+    </Reference>
+    <Reference Include="Intrpl">
+      <HintPath>..\..\Intrpl\Intrpl\bin\Debug\Intrpl.dll</HintPath>
+    </Reference>
+    <Reference Include="IzracunatiPrepRezimi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IzracunatiPrepRezimi\IzracunatiPrepRezimi\bin\Debug\IzracunatiPrepRezimi.dll</HintPath>
+    </Reference>
+    <Reference Include="IzracunatiRez, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IzracunatiRez\IzracunatiRez\bin\Debug\IzracunatiRez.dll</HintPath>
+    </Reference>
+    <Reference Include="KvalitetObradeReznePl">
+      <HintPath>..\..\KvalitetObradeReznePl\KvalitetObradeReznePl\bin\Debug\KvalitetObradeReznePl.dll</HintPath>
+    </Reference>
+    <Reference Include="KvalitetObradjenePovrsine">
+      <HintPath>..\..\KvalitetObradjenePovrsine\KvalitetObradjenePovrsine\bin\Debug\KvalitetObradjenePovrsine.dll</HintPath>
+    </Reference>
+    <Reference Include="MasinaAlatka">
+      <HintPath>..\..\MasinaAlatka\MasinaAlatka\bin\Debug\MasinaAlatka.dll</HintPath>
+    </Reference>
+    <Reference Include="MasterRadDataStorage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MasterRadDataStorage\MasterRadDataStorage\bin\Debug\MasterRadDataStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterijalO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MaterijalO\MaterijalO\bin\Debug\MaterijalO.dll</HintPath>
+    </Reference>
+    <Reference Include="numInputCont">
+      <HintPath>..\..\numInputCont\numInputCont\bin\Debug\numInputCont.dll</HintPath>
+    </Reference>
+    <Reference Include="OblikPl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OblikPl\OblikPl\bin\Debug\OblikPl.dll</HintPath>
+    </Reference>
+    <Reference Include="PointCoord, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PointCoord\PointCoord\bin\Debug\PointCoord.dll</HintPath>
+    </Reference>
+    <Reference Include="PrecnikPripremkaObrade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PrecnikPripremkaObrade\PrecnikPripremkaObrade\bin\Debug\PrecnikPripremkaObrade.dll</HintPath>
+    </Reference>
+    <Reference Include="PreporucenRezimObrade">
+      <HintPath>..\..\PreporucenRezimObrade\PreporucenRezimObrade\bin\Debug\PreporucenRezimObrade.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepRezim">
+      <HintPath>..\..\PrepRezim\PrepRezim\bin\Debug\PrepRezim.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepZaMat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PrepZaMat\PrepZaMat\bin\Debug\PrepZaMat.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepZaPostojanostAlata">
+      <HintPath>..\..\PrepZaPostojanostAlata\PrepZaPostojanostAlata\bin\Debug\PrepZaPostojanostAlata.dll</HintPath>
+    </Reference>
+    <Reference Include="PripremakZaObradu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PripremakZaObradu\PripremakZaObradu\bin\Debug\PripremakZaObradu.dll</HintPath>
+    </Reference>
+    <Reference Include="RacunanjeGranicneVrednostiDubineRezanja">
+      <HintPath>..\..\RacunanjeGranicneVrednostiDubineRezanja\RacunanjeGranicneVrednostiDubineRezanja\bin\Debug\RacunanjeGranicneVrednostiDubineRezanja.dll</HintPath>
+    </Reference>
+    <Reference Include="RacunanjeParametaraRez, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RacunanjeParametaraRez\RacunanjeParametaraRez\bin\Debug\RacunanjeParametaraRez.dll</HintPath>
+    </Reference>
+    <Reference Include="RezimiO">
+      <HintPath>..\..\RezimiO\RezimiO\bin\Debug\RezimiO.dll</HintPath>
+    </Reference>
+    <Reference Include="ReznaPl">
+      <HintPath>..\..\ReznaPl\ReznaPl\bin\Debug\ReznaPl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TipObr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TipObr\TipObr\bin\Debug\TipObr.dll</HintPath>
+    </Reference>
+    <Reference Include="UkupanDodatakO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\UkupanDodatakO\UkupanDodatakO\bin\Debug\UkupanDodatakO.dll</HintPath>
+    </Reference>
+    <Reference Include="VrstaObrade">
+      <HintPath>..\..\VrstaObrade\VrstaObrade\bin\Debug\VrstaObrade.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
