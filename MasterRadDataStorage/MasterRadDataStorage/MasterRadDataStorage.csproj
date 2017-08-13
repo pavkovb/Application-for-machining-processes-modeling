@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACA3C313-3641-4103-8CC6-D0D8937FA62B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasterRadDataStorage</RootNamespace>
+    <AssemblyName>MasterRadDataStorage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConnectionToDB">
+      <HintPath>..\..\ConnectionToDB\ConnectionToDB\bin\Debug\ConnectionToDB.dll</HintPath>
+    </Reference>
+    <Reference Include="DodatakZaObradu">
+      <HintPath>..\..\DodatakZaObradu\DodatakZaObradu\bin\Debug\DodatakZaObradu.dll</HintPath>
+    </Reference>
+    <Reference Include="DrzacAlataNS">
+      <HintPath>..\..\DrzacAlataNS\DrzacAlataNS\bin\Debug\DrzacAlataNS.dll</HintPath>
+    </Reference>
+    <Reference Include="FilterDT">
+      <HintPath>..\..\FilterDT\FilterDT\bin\Debug\FilterDT.dll</HintPath>
+    </Reference>
+    <Reference Include="KvalitetObradeReznePl">
+      <HintPath>..\..\KvalitetObradeReznePl\KvalitetObradeReznePl\bin\Debug\KvalitetObradeReznePl.dll</HintPath>
+    </Reference>
+    <Reference Include="KvalitetObradjenePovrsine">
+      <HintPath>..\..\KvalitetObradjenePovrsine\KvalitetObradjenePovrsine\bin\Debug\KvalitetObradjenePovrsine.dll</HintPath>
+    </Reference>
+    <Reference Include="MasinaAlatka">
+      <HintPath>..\..\MasinaAlatka\MasinaAlatka\bin\Debug\MasinaAlatka.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterijalO">
+      <HintPath>..\..\MaterijalO\MaterijalO\bin\Debug\MaterijalO.dll</HintPath>
+    </Reference>
+    <Reference Include="OblikPl">
+      <HintPath>..\..\OblikPl\OblikPl\bin\Debug\OblikPl.dll</HintPath>
+    </Reference>
+    <Reference Include="PrecnikPripremkaObrade">
+      <HintPath>..\..\PrecnikPripremkaObrade\PrecnikPripremkaObrade\bin\Debug\PrecnikPripremkaObrade.dll</HintPath>
+    </Reference>
+    <Reference Include="PreporucenRezimObrade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PreporucenRezimObrade\PreporucenRezimObrade\bin\Debug\PreporucenRezimObrade.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepRezObradeUZavisnostiOdMat">
+      <HintPath>..\..\PrepRezObradeUZavisnostiOdMat\PrepRezObradeUZavisnostiOdMat\bin\Debug\PrepRezObradeUZavisnostiOdMat.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepZaMat">
+      <HintPath>..\..\PrepZaMat\PrepZaMat\bin\Debug\PrepZaMat.dll</HintPath>
+    </Reference>
+    <Reference Include="PrepZaPostojanostAlata, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PrepZaPostojanostAlata\PrepZaPostojanostAlata\bin\Debug\PrepZaPostojanostAlata.dll</HintPath>
+    </Reference>
+    <Reference Include="PripremakZaObradu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PripremakZaObradu\PripremakZaObradu\bin\Debug\PripremakZaObradu.dll</HintPath>
+    </Reference>
+    <Reference Include="RezimiO">
+      <HintPath>..\..\RezimiO\RezimiO\bin\Debug\RezimiO.dll</HintPath>
+    </Reference>
+    <Reference Include="ReznaPl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReznaPl\ReznaPl\bin\Debug\ReznaPl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TipObr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TipObr\TipObr\bin\Debug\TipObr.dll</HintPath>
+    </Reference>
+    <Reference Include="UkupanDodatakO">
+      <HintPath>..\..\UkupanDodatakO\UkupanDodatakO\bin\Debug\UkupanDodatakO.dll</HintPath>
+    </Reference>
+    <Reference Include="VrstaObrade">
+      <HintPath>..\..\VrstaObrade\VrstaObrade\bin\Debug\VrstaObrade.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataStorage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
